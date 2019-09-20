@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { ThemeProvider } from 'emotion-theming';
 import styled from '@emotion/styled';
-import { IntlProvider, FormattedMessage } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 import { messages } from './assets/i18n/messages';
 import { theme } from './assets/styles/theme';
 import { Dashboard } from './dashboard/Dashboard.jsx'
