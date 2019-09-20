@@ -7,7 +7,7 @@ import { messages } from './assets/i18n/messages';
 import { theme } from './assets/styles/theme';
 import { Dashboard } from './dashboard/Dashboard.jsx'
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Switch } from 'react-router';
+import { Switch, Redirect } from 'react-router';
 import { Header } from './header/Header.jsx'
 import { Learn } from './learn/Learn.jsx'
 import { Tests } from './tests/tests';
@@ -16,7 +16,8 @@ import { Checker } from './checker/checker';
 import { PageNotFound } from './PageNotFound/PageNotFound.jsx';
 
 const MainStyled = styled.div`
-  color: ${({ theme }) => theme.colors.primary}
+  color: ${({ theme }) => theme.colors.primary};
+  margin-top: 65px;
 `;
 
 function App() {
@@ -24,14 +25,14 @@ function App() {
     <IntlProvider locale="en" messages={messages}>
       <ThemeProvider theme={theme}>
         <Router>
+          <Header />
           <MainStyled>
-
-            <FormattedMessage id="welcome" />
-
-            <Header />
-
             <Switch>
               <Route exact path="/" render={() => (
+                <Redirect to="/dashboard" />
+              )} />
+
+              <Route exact path="/dashboard" render={() => (
                 <Dashboard />
               )} />
 
