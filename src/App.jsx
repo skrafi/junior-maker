@@ -25,6 +25,7 @@ function App() {
     <IntlProvider locale="en" messages={messages}>
       <ThemeProvider theme={theme}>
         <Router>
+          Test
           <Header />
           <MainStyled>
             <Switch>
