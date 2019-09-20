@@ -9,7 +9,7 @@ script:
 - npm run build
 deploy:
   provider: heroku
-  app: junior-maker
+  app: jm-web-app
   api_key:
     secure: td7m06kJZc/37x3r3IIfBBO235gBLsZb6PIDFIPolUXPqF26RULJIy2st2yxxMA7AZxaenHUX/zNbqrpJ7uQfl7cyA2i7FhqNwj9sMIeXJHM+RmUDPdD/Zc7UoFgqSpdxNCL6g7TvRHas/UFNl1CGXmJaujgikkJYY0PmnIb6okcngKhpH0gG2s0a40xiXfULPuYNpqDK/BP24alBiqtt33VzzvbWfni4rISTQfKkRZRsccaEr/V2m+QSnI6BVmFNG1is1/veskflDfBn95Rer3F6X9pHlSmum5yO+DedZ53J77y/ZLyiWNPBYXQJz3qW/+iz8nb0YCy78n64tRhuL5h0wdWETH9nsATj8lNqvkGT0Sz9te/rO7F1WOugnumy7/FzlXJYwKrumiHVx4HQP6dPsJIJoSB/alzw8D4yZmVjVRPJ8EtW+U2YG3anr4VQJy7KMk0G4n6U3rUrjoGSCA3BHmg5YcP2NQJF6JcXFLNPYHPgkx1esKYhlssGK0tBvxs7KxzmsshPbyjOnaS+Bctyj6o05udIhb1TL+ySK7NdY/nk3KcO/GhDswwFfy6gbguTK/oT4G5zRdtzC7w77UYS0OqCYp2ZKh5BrxmvmNUL2IGmhHkcaKiNY5FtugCpwbtZytciMewCjRV+KFAcag4kP/iC7zEjegN+OQraLE=
 true:
