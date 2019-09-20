@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: junior-maker
+  api_key:
+    secure: XXCvYGzLK5KHqT0Bvxy5dMyuEIqfFjecr+vXTN360Ijj26wX1W0xcRVw0WiP+Z4Im40rzs2R4HC6PC667SRtiNFi428JDk7I/7qkfnS83hTzsr2XAesoVkTpJdqiHwwrV5Vt5G4WBXm1tUHqYzwmgK7/CJiD3+eaxg+3C77Cudy2NuIy/ouKThcVt0PfPTdaKB21tE3uPuGlosX3uY3yzaPulNgEbmcCz05HqaRXnILPIdA7z5NHzBKF4x1dgAJ5nKdwhS/OPc3+PvC0Ippn8YBdMnfmzDSvO4ZtUUh/0sDCFXcYKqj7dfMOIMEmgzhAT35Xo8WpnN42xwc36M1dx8j7sbmg4ifn7k7AW7jbCHNQfhT3iRD0G6FMHYps1JKCfW4883E0cgp6I1GYRNSkJOsxkzb81QHdTgQj3oWqM9Hjkmx1KPf6l1SKmL7tOS+bLrLn+EQXhXK71ppgBi4HkbUrNatC0JHCsm5dY6nH1lNmJsWAIdrSS019WD4jCOVPwm9xP06ZyaYqrgSgrMCDEWF4ixz+CwNKNRhQc8PokpZYlvhOtfxrXwq5cTijuNRzNe62l4MvPh0aioR/RmhP+aw5tMN7H5A5Z0ziFKSi/AQF+3i/hiLDxA0h4fS85Zz+oSyb2HzJ8QeqpI1KyHrBqSDrGaALqpLpG/hzYvDjHbU=
+true:
+  branch: master
